@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 834 530" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <rect x="275.711" y="24.17" width="146.85" height="44.743" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="325.183" y="52.224" style="font-family: sans-serif; font-size: 16px; white-space: pre;">START</text>
+  <rect x="114.353" y="23.431" width="1" height="30" transform="matrix(1.000008, 0, 0, 1, 234.282094, 45.901398)"/>
+  <path d="M 349.136 -121.423 L 354.806 -110.082 L 343.465 -110.082 L 349.136 -121.423 Z" transform="matrix(1, 0, 0, -1.000001, 0, -10.998983)" bx:shape="triangle 343.465 -121.423 11.341 11.341 0.5 0 1@997f6acf"/>
+  <rect x="237.213" y="110.187" width="223.847" height="97" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="252.578" y="137.824" style="font-family: sans-serif; font-size: 16px; white-space: pre;">Find a menu item or button</text>
+  <text x="252.578" y="161.145" style="font-family: sans-serif; font-size: 16px; white-space: pre;">which looks related to what </text>
+  <text x="221.899" y="243.973" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000001, 31.430462, -60.127838)">you want to do.</text>
+  <rect x="114.353" y="23.431" width="1" height="30" transform="matrix(1.000008, 0, 0, 1, 233.147817, 183.790375)"/>
+  <path d="M 348.002 -248.312 L 353.672 -236.971 L 342.331 -236.971 L 348.002 -248.312 Z" transform="matrix(1, 0, 0, -1, 0, 0)" bx:shape="triangle 342.331 -248.312 11.341 11.341 0.5 0 1@43a15e50"/>
+  <rect x="274.576" y="247.949" width="146.85" height="44.743" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="324.048" y="247.003" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000001, 0, 29.999783)">Click it.</text>
+  <text x="355.34" y="227.525" style="font-family: sans-serif; font-size: 14px; white-space: pre;">OK</text>
+  <rect x="114.357" y="23.431" width="1" height="30" transform="matrix(0.999977, 0, 0, 1, 233.182122, 269.453247)"/>
+  <path d="M 348.036 -333.975 L 353.706 -322.634 L 342.365 -322.634 L 348.036 -333.975 Z" transform="matrix(1, 0, 0, -1, 0, 0)" bx:shape="triangle 342.365 -333.975 11.341 11.341 0.5 0 1@be5dad4c"/>
+  <rect x="273.788" y="333.576" width="146.85" height="44.743" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="305.777" y="362.63" style="font-family: sans-serif; font-size: 16px; white-space: pre;">Did it work?</text>
+  <rect x="273.847" y="419.21" width="146.85" height="44.743" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="283.168" y="546.742" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000002, 21.006893, -98.478653)">You're done!</text>
+  <rect x="114.357" y="23.431" width="1" height="30" transform="matrix(0.999977, 0, 0, 1, 233.418389, 354.984863)"/>
+  <path d="M 348.272 -419.482 L 353.942 -408.141 L 342.601 -408.141 L 348.272 -419.482 Z" transform="matrix(1, 0, 0, -1, 0, 0)" bx:shape="triangle 342.601 -419.482 11.341 11.341 0.5 0 1@f56b8514"/>
+  <text x="359.863" y="399.101" style="font-family: sans-serif; font-size: 14px; white-space: pre;">Yes</text>
+  <text x="217.433" y="434.68" style="font-family: sans-serif; font-size: 14px; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, 23.430275, -58.127632)">No</text>
+  <rect x="114.353" y="33.584" width="1" height="43" transform="matrix(0, 1.000008, -1, 0, 306.966946, 240.621968)"/>
+  <path d="M 458.002 -462.942 L 463.672 -451.601 L 452.331 -451.601 L 458.002 -462.942 Z" transform="matrix(0, 1, 1.000003, 0, 684.198084, -102.526672)" bx:shape="triangle 452.331 -462.942 11.341 11.341 0.5 0 1@1057d17b"/>
+  <rect x="29.14" y="318.57" width="192.179" height="87.685" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="51.79" y="342.834" style="font-family: sans-serif; font-size: 16px; white-space: pre;">Have you been trying</text>
+  <text x="51.419" y="368.872" style="font-family: sans-serif; font-size: 16px; white-space: pre;">this for over half </text>
+  <text x="50.972" y="393.28" style="font-family: sans-serif; font-size: 16px; white-space: pre;">an hour?</text>
+  <rect x="28.792" y="451.862" width="190.038" height="55.752" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="283.168" y="546.742" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000002, -236.501389, -71.262482)">Ask someone for help</text>
+  <path d="M -334.531 481.391 L -328.861 492.732 L -340.202 492.732 L -334.531 481.391 Z" transform="matrix(1.000001, 0, 0, -1, 453.828087, 933.551392)" bx:shape="triangle -340.202 481.391 11.341 11.341 0.5 0 1@8b16fb80"/>
+  <text x="455.371" y="450.291" style="font-family: sans-serif; font-size: 14px; white-space: pre;" transform="matrix(1, 0, 0, 1.000002, -324.473785, -19.537781)">Yes</text>
+  <rect x="118.653" y="406.527" width="1" height="34"/>
+  <text x="283.168" y="546.742" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000002, -237.36084, -51.466728)">or give up.</text>
+  <text x="217.433" y="434.68" style="font-family: sans-serif; font-size: 14px; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, -73.614326, -136.627213)">No</text>
+  <path d="M -334.534 481.391 L -328.864 492.732 L -340.205 492.732 L -334.534 481.391 Z" transform="matrix(0, 0.999999, -1, 0, 718.523621, 493.285645)" bx:shape="triangle -340.205 481.391 11.341 11.341 0.5 0 1@77a1661f"/>
+  <rect x="119.348" y="-319.162" width="1" height="161" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <rect x="175.53" y="-118.454" width="1" height="108" transform="matrix(0, 1, 1, 0, 238.134759, -17.490814)"/>
+  <path d="M -334.534 481.391 L -328.864 492.732 L -340.205 492.732 L -334.534 481.391 Z" transform="matrix(0, 0.999999, -1, 0, 1060.350342, 492.405426)" bx:shape="triangle -340.205 481.391 11.341 11.341 0.5 0 1@77a1661f"/>
+  <rect x="175.53" y="-118.454" width="1" height="108" transform="matrix(0, 1, 1, 0, 579.958458, -18.352386)"/>
+  <text x="420.509" y="324.586" transform="matrix(0.999999, 0, 0, 1, 75.471893, -196.770309)" style="font-family: sans-serif; font-size: 14px; white-space: pre;">I can't</text>
+  <text x="420.509" y="324.586" transform="matrix(0.999999, 0, 0, 1, 75.471931, -180.130859)" style="font-family: sans-serif; font-size: 14px; white-space: pre;">find one</text>
+  <rect x="578.216" y="127.347" width="112.721" height="63.359" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="599.764" y="153.298" style="font-family: sans-serif; font-size: 16px; white-space: pre;">Pick one</text>
+  <text x="599.758" y="172.061" style="font-family: sans-serif; font-size: 16px; white-space: pre;">at random.</text>
+  <rect x="175.53" y="-80.066" width="1" height="73" transform="matrix(0, 1, 1, 0, 770.999229, -18.695129)"/>
+  <rect x="763.069" y="-300.504" width="1" height="143" transform="matrix(1, 0, 0, -1, 0, 0)"/>
+  <text x="420.509" y="324.586" transform="matrix(0.999999, 0, 0, 1, 284.857758, -196.540176)" style="font-family: sans-serif; font-size: 14px; white-space: pre;">I've tried</text>
+  <text x="420.509" y="324.586" transform="matrix(0.999999, 0, 0, 1, 285.545258, -178.712372)" style="font-family: sans-serif; font-size: 14px; white-space: pre;">them all</text>
+  <rect x="578.27" y="311.731" width="235" height="117.525" style="fill: rgba(255, 255, 255, 0); stroke: rgb(0, 0, 0);"/>
+  <text x="593.635" y="342.368" style="font-family: sans-serif; font-size: 16px; white-space: pre;">Google the name of the</text>
+  <text x="594.236" y="365.689" style="font-family: sans-serif; font-size: 16px; white-space: pre;">program plus a few words</text>
+  <text x="221.899" y="243.973" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000001, 373.08905, 144.415787)">related to what you want </text>
+  <path d="M 763.838 -311.544 L 769.508 -300.203 L 758.167 -300.203 L 763.838 -311.544 Z" transform="matrix(1, 0, 0, -1, 0, 0)" bx:shape="triangle 758.167 -311.544 11.341 11.341 0.5 0 1@8519c16f"/>
+  <text x="221.899" y="243.973" style="font-family: sans-serif; font-size: 16px; white-space: pre;" transform="matrix(1, 0, 0, 1.000001, 372.390564, 167.04805)">to do. Follow the instructions</text>
+  <path d="M 345.875 -481.391 L 351.545 -470.05 L 340.204 -470.05 L 345.875 -481.391 Z" transform="matrix(0, 1, 1, 0, 901.946899, 8.06134)" bx:shape="triangle 340.204 -481.391 11.341 11.341 0.5 0 1@616802c7"/>
+  <rect x="175.53" y="-161.23" width="1" height="147" transform="matrix(0, 1, -1, 0, 416.780014, 177.686646)"/>
+</svg>
