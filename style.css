@@ -8,7 +8,14 @@ body {
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif;
 }
 
-#app {
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,14 +23,26 @@ body {
   height: 100vh;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: inherit;
-  line-height: 1.15;
-  margin: 0 0.5rem;
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 1rem;
 }
 
 section {
   display: flex;
+  margin-top: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.15;
+  margin: 0 0.5rem;
+  cursor: pointer;
 }
