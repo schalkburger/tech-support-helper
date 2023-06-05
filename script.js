@@ -7,8 +7,10 @@ function handleStart() {
   // Change the text and button choices
   appContainer.innerHTML = `
     <p>Find a menu item or button which looks related to what you want to do.</p>
-    <button id="foundBtn">Okay, I found one</button>
-    <button id="notFoundBtn">I can't find one</button>
+    <section>
+      <button id="foundBtn">Okay, I found one</button>
+      <button id="notFoundBtn">I can't find one</button>
+    </section>
   `;
 
   // Add event listeners to the new buttons
@@ -24,8 +26,10 @@ function handleFound() {
   // Change the text and button choices
   appContainer.innerHTML = `
     <p>Click the menu item or button. Did it work?</p>
-    <button id="yesBtn">Yes</button>
-    <button id="noBtn">No</button>
+    <section>
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </section>
   `;
 
   // Add event listeners to the new buttons
@@ -40,8 +44,10 @@ function handleNotFound() {
   // Change the text and button choices
   appContainer.innerHTML = `
       <p>Pick one at random.</p>
-      <button id="pickBtn">Okay</button>
-      <button id="triedAllBtn">I've tried them all</button>
+      <section>
+        <button id="pickBtn">Okay</button>
+        <button id="triedAllBtn">I've tried them all</button>
+      </section>
     `;
 
   // Add event listeners to the new buttons
@@ -57,8 +63,10 @@ function handlePick() {
   // Change the text and button choices
   appContainer.innerHTML = `
       <p>Click the menu item or button. Did it work?</p>
-      <button id="yesBtn">Yes</button>
-      <button id="noBtn">No</button>
+      <section>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </section>
     `;
 
   // Add event listeners to the new buttons
@@ -74,8 +82,10 @@ function handleTriedAll() {
   // Change the text and button choices
   appContainer.innerHTML = `
       <p>Google the name of the program plus a few words related to what you want to do. Follow any instructions. Did it work?</p>
-      <button id="googleYesBtn">Yes</button>
-      <button id="googleNoBtn">No</button>
+      <section>
+        <button id="googleYesBtn">Yes</button>
+        <button id="googleNoBtn">No</button>
+      </section>
     `;
 
   // Add event listeners to the new buttons
@@ -91,7 +101,11 @@ function handleYes() {
   // Change the text
   appContainer.innerHTML = `
       <p>You're done!</p>
+      <section><button id="startOverBtn">Click here to start over</button></section>
     `;
+
+  const startOverBtn = document.getElementById("startOverBtn");
+  startOverBtn.addEventListener("click", handleStart);
 }
 
 // Function to handle the "No" button click
@@ -99,7 +113,10 @@ function handleNo() {
   // Change the text
   appContainer.innerHTML = `
       <p>Ask someone for help or give up.</p>
+      <section><button id="startOverBtn">Click here to start over</button></section>
     `;
+  const startOverBtn = document.getElementById("startOverBtn");
+  startOverBtn.addEventListener("click", handleStart);
 }
 
 // Function to handle the "Yes" button click after Googling
@@ -107,7 +124,10 @@ function handleGoogleYes() {
   // Change the text
   appContainer.innerHTML = `
       <p>You're done!</p>
+      <section><button id="startOverBtn">Click here to start over</button></section>
     `;
+  const startOverBtn = document.getElementById("startOverBtn");
+  startOverBtn.addEventListener("click", handleStart);
 }
 
 // Function to handle the "No" button click after Googling
@@ -115,8 +135,10 @@ function handleGoogleNo() {
   // Change the text and button choices
   appContainer.innerHTML = `
       <p>Have you been trying this for over half an hour?</p>
-      <button id="halfHourYesBtn">Yes</button>
-      <button id="halfHourNoBtn">No</button>
+      <section>
+        <button id="halfHourYesBtn">Yes</button>
+        <button id="halfHourNoBtn">No</button>
+      </section>
     `;
 
   // Add event listeners to the new buttons
@@ -132,7 +154,10 @@ function handleGoogleYes() {
   // Change the text
   appContainer.innerHTML = `
       <p>You're done!</p>
+      <section><button id="startOverBtn">Click here to start over</button></section>
     `;
+  const startOverBtn = document.getElementById("startOverBtn");
+  startOverBtn.addEventListener("click", handleStart);
 }
 
 // Function to handle the "Yes" button click after half an hour
@@ -140,7 +165,10 @@ function handleHalfHourYes() {
   // Change the text
   appContainer.innerHTML = `
       <p>Ask someone for help or give up.</p>
+      <section><button id="startOverBtn">Click here to start over</button></section>
     `;
+  const startOverBtn = document.getElementById("startOverBtn");
+  startOverBtn.addEventListener("click", handleStart);
 }
 
 // Function to handle the "No" button click after half an hour
@@ -148,8 +176,10 @@ function handleHalfHourNo() {
   // Change the text and button choices
   appContainer.innerHTML = `
       <p>Find a menu item or button which looks related to what you want to do.</p>
-      <button id="foundBtn">Okay, I found one</button>
-      <button id="notFoundBtn">I can't find one</button>
+      <section>
+        <button id="foundBtn">Okay, I found one</button>
+        <button id="notFoundBtn">I can't find one</button>
+      </section>
     `;
 
   // Add event listeners to the new buttons
