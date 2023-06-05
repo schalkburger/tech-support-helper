@@ -21,99 +21,28 @@
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <meta name="theme-color" content="#fafafa" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <style type="text/css">
+      #app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
-      <div class="row justify-content-center mt-3 mb-5 pb-3">
-        <div class="col-md-12">
-          <h2>Interactive Support</h2>
-        </div>
-        <div class="col-md-12">
-          <div id="carousel-support" class="carousel slide my-3" data-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Carousel item -->
-              <div class="carousel-item active item-00">
-                <a role="button" class="btn btn-primary btn-block btn-lg py-4" data-target="#carousel-support" data-slide-to="1" href>Click here to start</a>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-01">
-                <div class="alert alert-warning" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">Find a menu item or button which looks related to what you want to do.</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-between mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-info mr-md-3" data-target="#carousel-support" data-slide-to="4" href>Okay, I found one</a>
-                  <a role="button" class="btn btn-info ml-md-3" data-target="#carousel-support" data-slide-to="2" href>I can't find one</a>
-                </div>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-02">
-                <div class="alert alert-warning" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">Pick one at random.</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-between mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-info mr-md-3" data-target="#carousel-support" data-slide-to="4" href>Okay</a>
-                  <a role="button" class="btn btn-info ml-md-3" data-target="#carousel-support" data-slide-to="3" href>I've tried them all</a>
-                </div>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-03">
-                <div class="alert alert-warning" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">Google the name of the program plus a few words related to what you want to do. Follow any instructions. Did it work?</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-between mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-info mr-md-3" data-target="#carousel-support" data-slide-to="7" href>Yes</a>
-                  <a role="button" class="btn btn-info ml-md-3" data-target="#carousel-support" data-slide-to="5" href>No</a>
-                </div>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-04">
-                <div class="alert alert-warning" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">Click the menu item or button. Did it work?</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-between mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-info mr-md-3" data-target="#carousel-support" data-slide-to="7" href>Yes</a>
-                  <a role="button" class="btn btn-info ml-md-3" data-target="#carousel-support" data-slide-to="5" href>No</a>
-                </div>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-05">
-                <div class="alert alert-warning" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">Have you been trying this for over half an hour?</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-between mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-info mr-md-3" data-target="#carousel-support" data-slide-to="6" href>Yes</a>
-                  <a role="button" class="btn btn-info ml-md-3" data-target="#carousel-support" data-slide-to="1" href>No</a>
-                </div>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-06">
-                <div class="alert alert-secondary" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">Ask someone for help or give up.</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-center mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-primary btn-block w-100" data-target="#carousel-support" data-slide-to="0" href>Start over</a>
-                </div>
-              </div>
-              <!-- Carousel item -->
-              <div class="carousel-item item-07">
-                <div class="alert alert-success" role="alert">
-                  <p class="py-3 px-3 m-0 text-center">You're done!</p>
-                </div>
-                <div class="btn-group d-flex flex-column flex-md-row justify-content-center mt-4" role="group" aria-label="button">
-                  <a role="button" class="btn btn-primary btn-block w-100" data-target="#carousel-support" data-slide-to="0" href>Start over</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="app">
+        <button id="startBtn">Click here to start</button>
       </div>
+
+      <script src="script.js"></script>
 
       <h2>Printable version</h2>
 
@@ -125,16 +54,6 @@
       </p>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript">
-              $('.carousel').carousel({
-        interval: false
-      })
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

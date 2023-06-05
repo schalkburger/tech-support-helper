@@ -6,18 +6,8 @@ Save your favourite IT geek some trouble, try to solve your computer problem wit
 
 [https://schalkburger.io/project/support/](https://schalkburger.io/project/support/)
 
-## Requirements
+## Specifications
 
-This script requires the following dependencies:
-
-- [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/download/) 4.3.1 
-
-## Initializing the Carousel
-
-You need to initialize the [Bootstrap Carousel](https://getbootstrap.com/docs/4.3/components/carousel/#via-javascript) component to make the Interactive Support function work:
-
-```js
-('.carousel').carousel({
-    interval: false,
-})
-```
+- https://www.explainxkcd.com/wiki/index.php/627:_Tech_Support_Cheat_Sheet
+- https://xkcd.com/627/
+- https://revealjs.com/#/1
