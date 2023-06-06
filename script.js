@@ -2,193 +2,80 @@
 const appContainer = document.getElementById("app");
 const startBtn = document.getElementById("startBtn");
 
-// Function to handle the start button click
-function handleStart() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-    <p>Find a menu item or button which looks related to what you want to do.</p>
-    <section>
-      <button id="foundBtn">Okay, I found one</button>
-      <button id="notFoundBtn">I can't find one</button>
-    </section>
-  `;
+// Define the user flow steps and button choices
+const steps = [
+  {
+    text: "Find a menu item or button which looks related to what you want to do.",
+    choices: [
+      { text: "Okay, I found one", nextStep: 1 },
+      { text: "I can't find one", nextStep: 2 },
+    ],
+  },
+  {
+    text: "Click the menu item or button. Did it work?",
+    choices: [
+      { text: "Yes", nextStep: 4 },
+      { text: "No", nextStep: 3 },
+    ],
+  },
+  {
+    text: "Pick one at random.",
+    choices: [
+      { text: "Okay", nextStep: 1 },
+      { text: "I've tried them all", nextStep: 5 },
+    ],
+  },
+  {
+    text: "Google the name of the program plus a few words related to what you want to do. Follow any instructions. Did it work?",
+    choices: [
+      { text: "Yes", nextStep: 4 },
+      { text: "No", nextStep: 6 },
+    ],
+  },
+  {
+    text: "You're done!",
+  },
+  {
+    text: "Have you been trying this for over half an hour?",
+    choices: [
+      { text: "Yes", nextStep: 7 },
+      { text: "No", nextStep: 1 },
+    ],
+  },
+  {
+    text: "Ask someone for help or give up.",
+  },
+];
 
-  // Add event listeners to the new buttons
-  const foundBtn = document.getElementById("foundBtn");
-  foundBtn.addEventListener("click", handleFound);
+let currentStep = 0; // Track the current step in the user flow
 
-  const notFoundBtn = document.getElementById("notFoundBtn");
-  notFoundBtn.addEventListener("click", handleNotFound);
+// Function to handle button clicks and update the user flow
+function handleButtonClick(choiceIndex) {
+  const choice = steps[currentStep].choices[choiceIndex];
+
+  if (choice.nextStep === undefined) {
+    // No next step, display the final text
+    appContainer.innerHTML = `<p>${steps[currentStep].text}</p>`;
+  } else {
+    // Update the current step and display the next step
+    currentStep = choice.nextStep;
+    renderStep();
+  }
 }
 
-// Function to handle the "Okay, I found one" button click
-function handleFound() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-    <p>Click the menu item or button. Did it work?</p>
-    <section>
-      <button id="yesBtn">Yes</button>
-      <button id="noBtn">No</button>
-    </section>
-  `;
+// Function to render the current step in the user flow
+function renderStep() {
+  const step = steps[currentStep];
+  let buttonsHTML = "";
 
-  // Add event listeners to the new buttons
-  const yesBtn = document.getElementById("yesBtn");
-  yesBtn.addEventListener("click", handleYes);
+  if (step.choices) {
+    // Build the HTML for the button choices
+    buttonsHTML = step.choices.map((choice, index) => `<button onclick="handleButtonClick(${index})">${choice.text}</button>`).join("");
+  }
 
-  const noBtn = document.getElementById("noBtn");
-  noBtn.addEventListener("click", handleNo);
-}
-
-function handleNotFound() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-      <p>Pick one at random.</p>
-      <section>
-        <button id="pickBtn">Okay</button>
-        <button id="triedAllBtn">I've tried them all</button>
-      </section>
-    `;
-
-  // Add event listeners to the new buttons
-  const pickBtn = document.getElementById("pickBtn");
-  pickBtn.addEventListener("click", handlePick);
-
-  const triedAllBtn = document.getElementById("triedAllBtn");
-  triedAllBtn.addEventListener("click", handleTriedAll);
-}
-
-// Function to handle the "Okay" button click
-function handlePick() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-      <p>Click the menu item or button. Did it work?</p>
-      <section>
-        <button id="yesBtn">Yes</button>
-        <button id="noBtn">No</button>
-      </section>
-    `;
-
-  // Add event listeners to the new buttons
-  const yesBtn = document.getElementById("yesBtn");
-  yesBtn.addEventListener("click", handleYes);
-
-  const noBtn = document.getElementById("noBtn");
-  noBtn.addEventListener("click", handleNo);
-}
-
-// Function to handle the "I've tried them all" button click
-function handleTriedAll() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-      <p>Google the name of the program plus a few words related to what you want to do. Follow any instructions. Did it work?</p>
-      <section>
-        <button id="googleYesBtn">Yes</button>
-        <button id="googleNoBtn">No</button>
-      </section>
-    `;
-
-  // Add event listeners to the new buttons
-  const googleYesBtn = document.getElementById("googleYesBtn");
-  googleYesBtn.addEventListener("click", handleGoogleYes);
-
-  const googleNoBtn = document.getElementById("googleNoBtn");
-  googleNoBtn.addEventListener("click", handleGoogleNo);
-}
-
-// Function to handle the "Yes" button click
-function handleYes() {
-  // Change the text
-  appContainer.innerHTML = `
-      <p>You're done!</p>
-      <section><button id="startOverBtn">Click here to start over</button></section>
-    `;
-
-  const startOverBtn = document.getElementById("startOverBtn");
-  startOverBtn.addEventListener("click", handleStart);
-}
-
-// Function to handle the "No" button click
-function handleNo() {
-  // Change the text
-  appContainer.innerHTML = `
-      <p>Ask someone for help or give up.</p>
-      <section><button id="startOverBtn">Click here to start over</button></section>
-    `;
-  const startOverBtn = document.getElementById("startOverBtn");
-  startOverBtn.addEventListener("click", handleStart);
-}
-
-// Function to handle the "Yes" button click after Googling
-function handleGoogleYes() {
-  // Change the text
-  appContainer.innerHTML = `
-      <p>You're done!</p>
-      <section><button id="startOverBtn">Click here to start over</button></section>
-    `;
-  const startOverBtn = document.getElementById("startOverBtn");
-  startOverBtn.addEventListener("click", handleStart);
-}
-
-// Function to handle the "No" button click after Googling
-function handleGoogleNo() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-      <p>Have you been trying this for over half an hour?</p>
-      <section>
-        <button id="halfHourYesBtn">Yes</button>
-        <button id="halfHourNoBtn">No</button>
-      </section>
-    `;
-
-  // Add event listeners to the new buttons
-  const halfHourYesBtn = document.getElementById("halfHourYesBtn");
-  halfHourYesBtn.addEventListener("click", handleHalfHourYes);
-
-  const halfHourNoBtn = document.getElementById("halfHourNoBtn");
-  halfHourNoBtn.addEventListener("click", handleHalfHourNo);
-}
-
-// Function to handle the "Yes" button click after Googling
-function handleGoogleYes() {
-  // Change the text
-  appContainer.innerHTML = `
-      <p>You're done!</p>
-      <section><button id="startOverBtn">Click here to start over</button></section>
-    `;
-  const startOverBtn = document.getElementById("startOverBtn");
-  startOverBtn.addEventListener("click", handleStart);
-}
-
-// Function to handle the "Yes" button click after half an hour
-function handleHalfHourYes() {
-  // Change the text
-  appContainer.innerHTML = `
-      <p>Ask someone for help or give up.</p>
-      <section><button id="startOverBtn">Click here to start over</button></section>
-    `;
-  const startOverBtn = document.getElementById("startOverBtn");
-  startOverBtn.addEventListener("click", handleStart);
-}
-
-// Function to handle the "No" button click after half an hour
-function handleHalfHourNo() {
-  // Change the text and button choices
-  appContainer.innerHTML = `
-      <p>Find a menu item or button which looks related to what you want to do.</p>
-      <section>
-        <button id="foundBtn">Okay, I found one</button>
-        <button id="notFoundBtn">I can't find one</button>
-      </section>
-    `;
-
-  // Add event listeners to the new buttons
-  const foundBtn = document.getElementById("foundBtn");
-  foundBtn.addEventListener("click", handleFound);
-
-  const notFoundBtn = document.getElementById("notFoundBtn");
-  notFoundBtn.addEventListener("click", handleNotFound);
+  // Update the app container with the current step text and button choices
+  appContainer.innerHTML = `<p>${step.text}</p>${buttonsHTML}`;
 }
 
 // Add event listener to the start button
-startBtn.addEventListener("click", handleStart);
+startBtn.addEventListener("click", renderStep);

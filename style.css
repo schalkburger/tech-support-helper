@@ -8,6 +8,13 @@ body {
   font-family: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(3, 26, 80);
+    color: #ffffff;
+  }
+}
+
 h1,
 p {
   margin: 0;
