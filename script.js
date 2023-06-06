@@ -1,6 +1,7 @@
 // Get the necessary elements from the DOM
 const appContainer = document.getElementById("app");
 const startBtn = document.getElementById("startBtn");
+const initialHTML = appContainer.innerHTML; // Store the initial HTML content
 
 // Define the user flow steps and button choices
 const steps = [
@@ -34,16 +35,18 @@ const steps = [
   },
   {
     text: "You're done!",
+    choices: [{ text: "Start over", nextStep: -1 }],
   },
   {
     text: "Have you been trying this for over half an hour?",
     choices: [
-      { text: "Yes", nextStep: 7 },
+      { text: "Yes", nextStep: 6 },
       { text: "No", nextStep: 1 },
     ],
   },
   {
     text: "Ask someone for help or give up.",
+    choices: [{ text: "Start over", nextStep: -1 }],
   },
 ];
 
@@ -53,12 +56,17 @@ let currentStep = 0; // Track the current step in the user flow
 function handleButtonClick(choiceIndex) {
   const choice = steps[currentStep].choices[choiceIndex];
 
-  if (choice.nextStep === undefined) {
-    // No next step, display the final text
-    appContainer.innerHTML = `<p>${steps[currentStep].text}</p>`;
-  } else {
-    // Update the current step and display the next step
+  if (choice.nextStep === -1) {
+    // Start over choice, reset to initial state
+    currentStep = 0;
+    appContainer.innerHTML = initialHTML;
+    appContainer.classList.toggle("fadeIn"); // Apply fadeIn class
+    // Reattach event listener to the start button
+    document.getElementById("startBtn").addEventListener("click", renderStep);
+  } else if (choice.nextStep !== undefined) {
+    // Update the current step
     currentStep = choice.nextStep;
+    appContainer.classList.toggle("fadeIn"); // Apply fadeIn class
     renderStep();
   }
 }
@@ -74,8 +82,9 @@ function renderStep() {
   }
 
   // Update the app container with the current step text and button choices
-  appContainer.innerHTML = `<p>${step.text}</p>${buttonsHTML}`;
+  appContainer.innerHTML = `<p>${step.text}</p><section>${buttonsHTML}</section>`;
+  appContainer.classList.toggle("fadeIn"); // Apply fadeIn class
 }
 
 // Add event listener to the start button
-startBtn.addEventListener("click", renderStep);
+document.getElementById("startBtn").addEventListener("click", renderStep);
