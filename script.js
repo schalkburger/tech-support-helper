@@ -27,7 +27,7 @@ const steps = [
     ],
   },
   {
-    text: "Google the name of the program plus a few words related to what you want to do. Follow any instructions. Did it work?",
+    text: `<a href="https://google.com/" target="_blank">Google</a> the name of the program plus a few words related to what you want to do. Follow any instructions. Did it work?`,
     choices: [
       { text: "Yes", nextStep: 4 },
       { text: "No", nextStep: 6 },
