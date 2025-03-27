@@ -6,11 +6,11 @@
 
 Dear various parents, grandparents, co-workers, and other ‘not computer people’.
 
-Save your favourite IT geek some trouble, try to solve your computer problem with the following process.
+Tech Support Helper is a simple, interactive web app that guides users through troubleshooting technical issues step-by-step.
 
-My Tech Support Helper App eliminates the guesswork, guiding the user along a path of logical and informed decisions. It’s like having that “IT person” with you who gently steers you toward the light at the end of the technical tunnel.
+It’s like having that “IT person” with you who gently steers you toward the light at the end of the technical tunnel.
 
-[https://tsh.schalkburger.io](https://tsh.schalkburger.io)
+[schalkburger.io/projects/tech-support-helper](https://schalkburger.io/projects/tech-support-helper)
 
 ---
 
